@@ -453,7 +453,7 @@ async def ai_analyze(img_bytes: bytes, mime: str, lang: str) -> str:
     prompt = ("حلل هذا المخطط بدقة عالية." if lang == "ar"
                else "Analyze this chart with high accuracy.")
 
-    kw = {"api_key": OPENAI_API_KEY}
+    kw = {"api_key": AIzaSyBUIlFq1WU-V2VFXsLdcLWlo2cBMekXuX0}
     if OPENAI_BASE_URL:
         kw["base_url"] = OPENAI_BASE_URL
     client = AsyncOpenAI(**kw)
